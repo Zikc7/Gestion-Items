@@ -13,9 +13,9 @@ class ItemResponse(BaseModel):
     id: int
     title:str
     status: str = "New"
-    description: str = ""
-    create_at: datetime
-    updated_at: datetime
+    description: str = "prueba"
+    create_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
 class ItemRequest(BaseModel):
     title:str | None = None
