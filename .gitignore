@@ -3,3 +3,10 @@ venv/*
 
 #python files
 **/__pycache__/*
+
+#Secrets
+.env
+
+
+# Logs
+logs
