@@ -22,7 +22,7 @@ def config_logger(debug_level: bool) -> None:
 
     formatter = logging.Formatter(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:S"
+        datefmt="%Y-%m-%d %H:%M:%S"
     )
     handler.setFormatter(formatter)
 

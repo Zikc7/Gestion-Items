@@ -63,7 +63,6 @@ async def get_by_id(id: Annotated[int, Path(ge=1)]) -> ItemResponse:
     description="Actualiza un Item con el body Para. Falla si el id no existe"
 )  # ? PATCH/projects
 async def update(id: Annotated[int, Path(ge=1)], item: ItemRequest) -> ItemResponse:
-    return item
     return controller.update(id,item)
 
 

@@ -47,13 +47,12 @@ class ItemsController:
 
     def update(self, id: int, new_data: ItemRequest) -> ItemResponse:
         try:
-            return self.service.update(id, new_data)
+            self.service.update(id,new_data)
         except BaseHTTPException as ex:
             self.__handler_http_exception(ex)
         except Exception:
             logger.critical(f"Error no contemplado en {__name__}.update()")
-            raise InternalServerError(
-                "Error no contemplado, contacte al sysadmin")
+            raise InternalServerError
 
     def delete(self, id: int) -> None:
         try:
