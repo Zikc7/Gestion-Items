@@ -15,7 +15,7 @@ class ItemsController:
 
     def create(self, new_item: NewItemRequest) -> ItemResponse:
         try:
-            logger.debug(f"Create Item{new_item.title}")
+            logger.debug(f"Create Item{new_item.name}")
             return self.service.create(new_item)
         except BaseHTTPException as ex:
             self.__handler_http_exception(ex)

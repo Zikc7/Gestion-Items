@@ -31,7 +31,7 @@ class DatabaseConnection:
             return False
 
     def disconnect(self) -> None:
+        print("\033[93m", "Data Base Disconnected", "\033[0m")
         if self.session:
             self.session.close()
        
-        print("\033[93m", "Data Base Disconnected", "\033[0m")

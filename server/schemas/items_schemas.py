@@ -4,21 +4,21 @@ from pydantic import BaseModel
 
 
 class NewItemRequest(BaseModel):
-    title: str
-    status: str = "New"
-    description: str = ""
+    name: str
+    proveedor: str = "New"
+    marca: str = ""
 
 
 class ItemRequest(BaseModel):
-    title: str | None = None
-    status: str | None = None
-    description: str | None = None
+    name: str | None = None
+    proveedor: str | None = None
+    marca: str | None = None
 
 
 class ItemResponse(BaseModel):
     id: int
-    title: str
-    status: str = "New"
-    description: str = ""
+    name: str
+    proveedor: str = "New"
+    marca: str = ""
     create_at: datetime = datetime.now()
     updated_at: datetime = datetime.now()
