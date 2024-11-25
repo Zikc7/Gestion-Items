@@ -35,7 +35,7 @@ class ItemsRepository:
         return self.__to_dict(item)
 
     def delete(self, id: int) -> bool:
-        item = self.__get_one()
+        item = self.__get_one(id)
         if item is None:
             return False 
         self.db.delete(item)
