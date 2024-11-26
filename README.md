@@ -2,12 +2,12 @@
 Abarca temas del modulo principal del curso del ITU "Python +  FastAPI"
 
 ## Dependencias
- fastapi Dependecia Principal
- uvicorn Dependecia Principal
- SQLAlchemy 
- alembic 
- pydantic-settings
- psycopg2-binary 
+ fastapi Dependecia Principal /
+ uvicorn Dependecia Principal /
+ SQLAlchemy /
+ alembic /
+ pydantic-settings /
+ psycopg2-binary /
 
  ## Incializacion 
  1: Crear y activar el entorno virtual
